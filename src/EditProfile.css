@@ -1,0 +1,284 @@
+.avatar {
+    width: 1000px;
+    height: 1000px;
+    justify-content:center;
+}
+
+
+    
+    .form .input {
+        color: black;
+        padding: 5px;
+        margin-top: 10px;
+        display: flex;
+        border-radius: 5px;
+    }
+    .form .label {
+        margin-top: 25px;
+    }
+
+form .btn{
+    background-color: #5abb75;
+    color: white;
+    border-radius: 7px;}
+
+    .btn:hover {
+        background-color: #e6b209;
+        color: black;
+    }
+    form .btn1{
+        background-color: #5abb75;
+        margin: 0 auto;
+        color: white;
+        width: 30%;
+        margin-top: 30px;
+        padding: 10px;
+        margin-left: 5px;
+        border-radius: 7px;
+        margin-bottom: 7px;}
+        .btn1:hover {
+            background-color: #418f1d;
+            color: black;
+        }
+.btngroup{
+    margin-top: 20px; 
+    margin-left: 5px;
+}
+.btngroup .btn.active {
+    background-color:#1E6F5C;
+}
+.select{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+
+.appbar {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+}
+.grow {
+    flex-grow: 1;
+    /* z-index: 1500; */
+}
+.usermenu {
+    margin-top: 1.5rem;
+
+}
+.menuItem {
+    letter-spacing: 1px;
+    padding: 0.15rem;
+    padding-right: 0.7rem;
+    text-align: right;
+}
+.title {
+    display: none;
+}
+.search {
+    position: relative;
+    margin-right: 2px;
+    margin-left: 0;
+    width: 100%;
+}
+.searchIcon {
+    padding: 2px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputRoot {
+    color: inherit;
+}
+.inputInput {
+    padding: 10px;
+    width: 100%;
+}
+.sectionDesktop {
+    display: none;
+}
+.sectionMobile {
+    display: flex;
+}
+.dashboardBg {
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #ebebff;
+}
+.root {
+    display: flex;
+}
+.appBar {
+    background-color: blue;
+    color: black;
+    box-shadow: none;
+}
+
+.menuButton {
+    margin-right: 36;
+}
+.hide {
+    display: none;
+}
+.drawer {
+    flex-shrink: 0;
+    white-space: nowrap;
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    border: none;
+}
+.drawerOpen {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    border: none;
+}
+.drawerClose {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    border: none;
+    overflow-x: hidden;
+}
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px;
+}
+.content {
+    border: 1px solid black;
+    flex-grow: 1;
+    padding: 2px;
+}
+.divider {
+    height: 2px;
+    background-color: black;
+}
+.dividerClose {
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+}
+.listitem {
+    width: 80%;
+    margin: 0 auto;
+}
+.profileButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+.username {
+    letter-spacing : 1px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.icon  {
+    display: grid;
+    grid-template-columns: auto 10%;
+    column-gap: 0.25rem;
+    padding: 0.7rem 0;
+}
+.editProfile{
+    /* border: 1px solid blue; */
+    margin: 5px auto;
+    padding: 30px;
+    display: grid;
+    height:500px;
+    grid-template-columns: 30% auto;
+    column-gap : 2rem;
+    /* background-color:#E4EFE7; */
+    background-image: linear-gradient(20deg, #C5D7BD, #FEFFDE,#C5D7BD);
+    border-radius:5px;
+}
+.editProfileMenu{
+    /* border: 1px solid red; */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color:#52734D; */
+    background-image: linear-gradient(60deg, #52734D, #91C788,#52734D);
+    border-radius: 7px;
+}
+.editProfileContent {
+    /* border: 1px solid red; */
+    margin-top: 35px;
+    justify-content:center;
+}
+.editProfileMenu .editProfileButton { 
+    align-content: left;
+    color : red;
+    background-color:#5abb75;
+    padding:10px;
+    margin-top:30px;
+    text-align:left;
+    color: white;
+}
+.editProfileMenu .editProfileButton:focus {
+    background-color: #1E6F5C;
+}
+.editProfileButton:hover {
+    background-color:#3f912a,
+}
+
+.content {
+    flex-grow: 1;
+    padding: 8px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* .mainbodyPortion{
+      display: flex;
+      box-shadow: 0 8px 10px #5abb75, 0 5px 10px #cf0ba5;
+      width:100%;
+      align-items: center;
+      padding: 30px;
+      margin-left: 280px;
+      background-color: #DFEEEA;} */
+      .editProfileMenu .editProfileButton{
+        /* align-content: left; */
+        background-color: #5abb75;
+        /* padding:60px; */
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-top:35px;
+        text-align:left;
+        color: white;}
+        .editProfileButton:hover{
+          background-color: #63ec13;
+      }
+      .form .btn{
+        background-color: #5abb75;
+        /* margin: 0 auto; */
+        color: white;
+        width: 50%;
+        /* margin-top: 30px; */
+        padding: 5px;
+        border-radius: 7px;
+        /* margin-bottom: 7px; */
+    }
+        .btn:hover {
+            background-color: #d1b61e;
+            color: black;
+        }
+        .editProfile{
+            /* border: 1px solid blue; */
+            margin: 5px auto;
+            padding: 30px;
+            display: grid;
+            height:650px;
+            width:550px;
+            grid-template-columns: 30% auto;
+            column-gap : 2rem;
+            background-color:#E4EFE7;
+        }
+  }

@@ -1,0 +1,424 @@
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  .first{
+    width:100%;
+    margin-top:10%;
+    margin-left:10%;
+    border-radius:10px;
+    background-color: white;
+    padding:20px
+  }
+  
+  .first input{
+    border-color:black;
+    text-align: center;
+    
+  }
+  .form-group{
+    margin-bottom: 10px;
+  }
+  #file-group{
+    display:grid;
+    grid-template-columns: 1fr 0.001px;
+    
+  }
+  #file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+  }
+  
+  /* .form-group label{
+    text-align: center;
+    background-color:rgb(148, 148, 225);
+    padding:10px;
+    border-radius:10px;
+    color:white;
+  } */
+  .uploadIcon{
+    margin-right:10px;
+  }
+  #longDescription{
+    height:100px;
+  }
+  
+  
+  
+  .second{
+    width:100%;
+     margin-top:10%;
+    margin-left:10%;
+    border-radius:10px;
+    background-color: white;
+    padding:20px
+  }
+  
+  .second input{
+    padding-left:20px;
+  }
+  .icon{
+    position: relative;
+  }
+  .Icon{
+    position:absolute;
+    top:10px;
+    
+    margin-left: 50px;
+    margin-right:10px;
+    color:white;
+    font-size: 20px;
+    
+   
+  }
+  .Licon{
+    position: relative;
+  }
+  .LIcon{
+    position:absolute;
+    top:10px;
+    
+    margin-left: 30px;
+    margin-right:10px;
+    color:white;
+    font-size: 20px;
+   
+  }
+  /* #difficultyLevel{
+    background-color: blue;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align-last: center;
+    font-weight: bolder;
+    appearance: none;
+  } */
+  /* #ageGroup{
+    background-color: gray;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+  }
+  #board{
+    background-color: lightgreen;
+    border-color:transparent;
+    border-radius: 10px;
+    text-align-last:center;
+    color:white;
+    font-weight: bolder;
+    appearance: none;
+  }
+  #modeOfInstruction{
+    background-color: pink;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+  
+  } */
+  
+  .third{
+    width:100%;
+     margin-top:10%;
+    margin-left:10%;
+    border-radius:10px;
+    background-color: white;
+    padding:20px
+  
+  }
+  /* #coursePrice{
+    background-color: red;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+  
+  } */
+  /* #discount{
+    background-color:lightgray;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+  
+  }
+  #actualPrice{
+    background-color:skyblue;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    text-decoration-line: line-through;
+    font-weight: bolder;
+  
+  
+  }
+  #priceAfterDiscount{
+    background-color:palevioletred;
+    border-color:transparent;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    
+  
+  } */
+  input[type="number"]::placeholder{
+    color:white
+  }
+  .second input[type="text"]::placeholder{
+    color:white
+  }
+  
+  
+  :root{
+  --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+   
+    --clr-primary-5: hsl(205, 78%, 60%);
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+  
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+  
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    --max-width: 1170px;
+    --fixed-width: 450px;
+    --clr-orange-1: hsl(12, 83%, 98%);
+    --clr-orange-2: hsl(14, 91%, 95%);
+    --clr-orange-3: hsl(12, 89%, 89%);
+    --clr-orange-4: hsl(13, 87%, 82%);
+    --clr-orange-5: hsl(13, 88%, 68%);
+    --clr-orange-6: hsl(13, 88%, 55%);
+    --clr-orange-7: hsl(13, 74%, 49%);
+    --clr-orange-8: hsl(13, 74%, 33%);
+    --clr-orange-9: hsl(13, 73%, 25%);
+    --clr-orange-10: hsl(13, 73%, 16%);
+  }
+  .item{
+      display : flex;
+      background-color: lightgray;
+      justify-content: space-around;
+      align-items: center;
+      margin:0 auto;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      max-width: var(--max-width);
+  }
+  .item button{
+      background-color: transparent;
+      border-color: transparent;
+      color:rgb(69, 36, 36);
+      margin: 10px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  .container{
+      text-align: center;
+      margin-top:5rem;
+  
+  }
+  .item h1{
+      color:olive;
+      margin-left:10px;
+      font-size: 20px;
+  }
+  
+  .form1 {
+    background: rgb(175, 175, 211);
+    margin:0 auto;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    padding:30px 100px;
+  }
+  /* .form1 input {
+    background: var(--clr-grey-10);
+    border-color: transparent;
+    border-radius: var(--radius);
+    text-align: center;
+   
+  } */
+  
+  .btn {
+    display: block;
+    background: var(--clr-black);
+    color: var(--clr-white);
+    border-color: transparent;
+    margin:0 auto;
+    margin-top: 1rem;
+    letter-spacing: var(--spacing);
+    padding: 5px 5px;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .item h3{
+      margin-right:20px;
+      font-size: 18px;
+  }
+  
+  
+  .form-controls {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 30px;
+    align-items: center;
+    
+    grid-column-gap: 15px;
+    margin-bottom: 20px;
+  }
+  /* .lesson{
+    border:2px solid rgb(50, 32, 32);
+    border-radius:5px;
+    padding:20px;
+   
+    margin-top:20px;
+  } */
+  
+  
+  /* .btn:hover{
+    background-color: rgb(164, 70, 70);
+  } */
+  .item-mini{
+      display : flex;
+      background-color: lightgray;
+      justify-content: space-between;
+      align-items: center;
+      margin:0 auto;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      max-width: var(--fixed-width);
+      margin-right:15px;
+      margin-top:10px;
+      border:1px solid black;
+  
+  }
+  .item-mini h3{
+    margin-left:10px;
+    margin-right:10px;
+    font-size:15px;
+  }
+  .sitem{
+    border:1px solid black;
+     border-radius: 10px;
+  }
+  .sitem h4{
+    margin-left:10px;
+    margin-right:10px;
+    font-size: 15px;
+  
+  }
+  h1{
+    color:rgb(55, 55, 131);
+    margin:0;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  .underLine{
+    height:2px;
+    background-color: brown;
+    margin-bottom: 20px;
+  }
+  /* .form1 label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+  } */
+  .underLine1{
+    height:4px;
+    background-color: blue;
+    width:300px;
+    margin:0 auto;
+    margin-bottom:30px;
+  }
+  
+  .Span{
+    background-color: grey;
+    display:grid;
+    grid-template-columns: 1fr 2fr 30px 30px;
+    align-items:center;
+    border-radius:3px;
+    margin-top:10px;
+  }
+  .Span h4{
+    font-size: 15px;
+  }
+  .bs{
+    margin-right: 5px;
+  }
+  
+  .chapters h4{
+    
+    color:black;
+    
+    padding:10px;
+    margin:0px 10px;
+  }
+  .SpanLesson{
+    background-color: rgb(237, 194, 115);
+    display:grid;
+    grid-template-columns: 1fr 30px 30px;
+    align-items:center;
+    border-radius:3px;
+    margin-top:10px;
+  
+  }
+  .SpanLesson h4{
+    margin:10px;
+    font-size: 15px;
+  }
+  input[type="text"]::placeholder{
+    color:hsl(13, 73%, 16%);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .fourth{
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+  .fifth{
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+  
