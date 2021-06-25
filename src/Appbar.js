@@ -31,7 +31,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Menu from '@material-ui/core/Menu';
 import {Brightness2,Brightness7} from '@material-ui/icons';
 import Link from '@material-ui/core/Link';
-import EditProfile from './EditProfile';
+// import EditProfile from './EditProfile';
 
 const drawerWidth = 240;
 
