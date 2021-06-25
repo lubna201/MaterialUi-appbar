@@ -349,11 +349,11 @@ function Appbar({themeMode, lightMode, darkMode}) {
           ))}
         </List>
       </Drawer>
-      <main className={classes.content}>
-                    <div className={classes.toolbar} />
+      {/* <main className={classes.content}>
+                    <div className={classes.toolbar} /> */}
                     {/* {isProfile && <EditProfile/>} */}
-                    <EditProfile/>
-                </main>
+                    {/* <EditProfile/>
+                </main> */}
     </div>
   );
 }

@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import pic from './4133820.jpg';
+import Appbar from './Appbar';
 
 function EditProfileStudent() {
     // const classes = useStyles()
@@ -123,8 +124,9 @@ function EditProfileStudent() {
 
     return (
         <React.Fragment>
-            <div className="editProfile">
-
+            <Appbar></Appbar>
+            <div className="editProfile" style={{margin:"100px"}}>
+                
                 <div className="editProfileMenu">
                 <Avatar style={{ height: '100px', width: '100px', marginBottom:"30px", alignSelf: 'center'}} alt="Remy Sharp" src={pic} />
                     <Button className="editProfileButton" color="primary" variant="contained" onClick={() => {

@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { theme } from './theme'
 import Appbar from './Appbar';
 import AddCourse from './AddCourse';
+import CourseDescriptionPage from './CourseDescriptionPage';
 // import AddCourse from './Addcourse';
+import EditProfile from './EditProfile';
 
 
 
@@ -21,11 +23,14 @@ function App() {
       <Router>
         <Switch>
           <Route path="/editProfile">
-            <Appbar></Appbar>
-           {/* <EditProfile></EditProfile> */}
+            {/* <Appbar></Appbar> */}
+           <EditProfile></EditProfile>
           </Route>
           <Route path="/addCourse">
             <AddCourse></AddCourse>
+          </Route>
+          <Route path="/courseDescription">
+            <CourseDescriptionPage></CourseDescriptionPage>
           </Route>
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
