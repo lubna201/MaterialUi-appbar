@@ -3,6 +3,14 @@
     height: 1000px;
     justify-content:center;
 }
+.contentStyle{
+    height: '100%';
+    color: '#fff';
+  line-height: '100%';
+  text-align: 'center';
+  /* background: '#364d79'; */
+}
+
 
 
     
