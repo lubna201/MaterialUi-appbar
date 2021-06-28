@@ -33,7 +33,7 @@ const CourseDescriptionPage = () => {
     <div>
       {/* <Appbar></Appbar> */}
       <Container>
-        <Grid container spacing={3} style={{ marginTop: "2%", justifyContent: "center" }}>
+        <Grid container spacing={3} style={{ marginTop: "2%" }}>
           <Grid item xs={12} sm={5}>
             {/* <Carousel style={{ height: "80%" }}>
               <div>
@@ -46,7 +46,7 @@ const CourseDescriptionPage = () => {
                 <img src={pic} alt="" srcset="" />
               </div>
             </Carousel> */}
-            <Carousel infiniteLoop={true} autoPlay style={{ height: "80%",padding:"0" }}>
+            <Carousel infiniteLoop={true}  thumbWidth={60} autoPlay style={{ height: "100%",padding:"0" }}>
             <img src={pic} alt="" srcset="" />
             <img src={pic} alt="" srcset="" />
             <img src={pic} alt="" srcset="" />
