@@ -33,9 +33,9 @@ const CourseDescriptionPage = () => {
     <div>
       {/* <Appbar></Appbar> */}
       <Container>
-        <Grid container spacing={3} style={{ marginTop: "3%", justifyContent: "center" }}>
+        <Grid container spacing={3} style={{ marginTop: "2%", justifyContent: "center" }}>
           <Grid item xs={12} sm={5}>
-            <Carousel style={{ height: "80%" }}>
+            {/* <Carousel style={{ height: "80%" }}>
               <div>
                 <img src={pic} alt="" srcset="" />
               </div>
@@ -45,63 +45,45 @@ const CourseDescriptionPage = () => {
               <div>
                 <img src={pic} alt="" srcset="" />
               </div>
-            </Carousel>
+            </Carousel> */}
+            <Carousel infiniteLoop={true} autoPlay style={{ height: "80%",padding:"0" }}>
+            <img src={pic} alt="" srcset="" />
+            <img src={pic} alt="" srcset="" />
+            <img src={pic} alt="" srcset="" />
+      </Carousel>
           </Grid>
-          <Grid item xs={12} sm={7} style={{alignItems:"center"}}>
-            <Typography variant="h4" gutterBottom>
-              English Basic Learning <Rating
-                name="simple-controlled"
-                value={value}
-                onChange={(event, newValue) => {
-                  setValue(newValue);
-                }}
-                size="medium"
-                style={{ marginLeft: "20px"}}
-              />
-            </Typography>
-            <Button variant="contained" color="primary" style={{ width: "100%", marginBottom: "8px" }}>
+          <Grid item xs={12} sm={7}>
+            <Grid container spacing={2}>
+
+              <Grid item xs={8} sm={8}>
+                <Typography variant="h4" gutterBottom>
+                  English Basic Learning
+                </Typography>
+              </Grid>
+              <Grid item xs={4} sm={4}>
+                <Rating
+                  name="simple-controlled"
+                  value={value}
+                  onChange={(event, newValue) => {
+                    setValue(newValue);
+                  }}
+                  size="medium"
+                />
+              </Grid>
+
+            </Grid>
+
+            <Button variant="contained" color="primary" style={{ width: "100%"}}>
               Enroll Now
             </Button>
             <Typography variant="p" gutterBottom>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ut maiores consequatur earum sunt totam et fugiat, cupiditate sed pariatur harum vitae? Alias ad hic officia sint fugit consequuntur repudiandae!
             </Typography>
 
-            <Divider style={{ marginTop: "5px" }} />
-
-            <List component="nav" aria-label="main mailbox folders">
-              <ListItem button>
-                <ListItemIcon>
-                  <ClassIcon color="primary" />
-                </ListItemIcon>
-                <ListItemText primary="Class 7" />
-              </ListItem>
-              <ListItem button>
-                <ListItemIcon>
-                  <AccessibilityIcon color="primary" />
-                </ListItemIcon>
-                <ListItemText primary="For 10-13 Years" />
-              </ListItem>
-            </List>
-            <Divider />
-            <List component="nav" aria-label="secondary mailbox folders">
-              <ListItem button>
-                <ListItemIcon>
-                  <LibraryBooksIcon color="primary" />
-                </ListItemIcon>
-                <ListItemText primary="Total 15 Chapters" />
-              </ListItem>
-
-              <ListItem button>
-                <ListItemIcon>
-                  <ScheduleIcon color="primary" />
-                </ListItemIcon>
-                <ListItemText primary="4 Month Course" />
-              </ListItem>
-            </List>
-            <Divider />
-            <Grid container alignItems="center" className="">
-              <List component="nav" aria-label="secondary mailbox folders">
-                <ListItem button>
+            <Divider style={{ margin: "5px" }} />
+            {/* <Grid container alignItems="center" className="">
+              <List style={{padding:"0"}}>
+                <ListItem >
                   <ListItemIcon>
                     <s><Icon icon={currencyInr} /></s>
                   </ListItemIcon>
@@ -109,15 +91,61 @@ const CourseDescriptionPage = () => {
                 </ListItem>
               </List>
               <Divider orientation="vertical" flexItem />
-              <List component="nav" aria-label="secondary mailbox folders">
-                <ListItem button>
+              <List>
+                <ListItem >
                   <ListItemText primary="Discount : 30%" />
                 </ListItem>
               </List>
-            </Grid>
-            <Typography variant="h6" gutterBottom>
+            </Grid> */}
+            <Grid container spacing={3}>
+
+              <Grid item xs={6} sm={6}>
+              <s><Icon icon={currencyInr} /><Typography variant="p" gutterBottom>
+              Actual Price :3000
+                </Typography></s>
+              </Grid>
+              <Grid item xs={6} sm={6}>
+              
+              <Typography variant="p" gutterBottom>
+              Discount : 30%
+                </Typography>
+              </Grid>
+              </Grid>
+
+            <Typography variant="h6" style={{paddingTop:"7px"}}>
               Course Price: <Icon icon={currencyInr} /> 2100
             </Typography>
+
+            <List style={{padding:"0"}}>
+              <ListItem button style={{padding:"0"}}>
+                <ListItemIcon>
+                  <ClassIcon color="primary" />
+                </ListItemIcon>
+                <ListItemText primary="Class 7" />
+              </ListItem>
+              <ListItem button style={{padding:"0"}}>
+                <ListItemIcon>
+                  <AccessibilityIcon color="primary" />
+                </ListItemIcon>
+                <ListItemText primary="For 10-13 Years" />
+              </ListItem>
+            </List>
+            <Divider />
+            <List>
+              <ListItem button style={{padding:"0"}}>
+                <ListItemIcon>
+                  <LibraryBooksIcon color="primary" />
+                </ListItemIcon>
+                <ListItemText primary="Total 15 Chapters" />
+              </ListItem>
+
+              <ListItem button style={{padding:"0"}}>
+                <ListItemIcon>
+                  <ScheduleIcon color="primary" />
+                </ListItemIcon>
+                <ListItemText primary="4 Month Course" />
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
       </Container>
