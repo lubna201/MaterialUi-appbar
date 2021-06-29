@@ -33,7 +33,7 @@ const CourseDescriptionPage = () => {
       <Container>
         <Grid container spacing={3} style={{ marginTop: "2%" , justifyContent:"center"}}>
           <Grid item xs={12} sm={5}>
-            <Carousel style={{ height: "80%" }}>
+            <Carousel thumbWidth={60} style={{ height: "80%" }}>
               <div>
                 <img src={pic} alt="" srcset="" />
               </div>
