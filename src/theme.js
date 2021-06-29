@@ -108,9 +108,9 @@ export const theme = createMuiTheme({
       letterSpacing: "0.00938em",
     },
     body2: {
-      fontFamily: "Times New Roman",
-      fontWeight: '400',
-      fontSize: "0.875rem",
+      fontFamily: "Roboto",
+      fontWeight: '500',
+      fontSize: "18px",
       lineHeight: '1.43',
       letterSpacing: "0.01071em"
     },

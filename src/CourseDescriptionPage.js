@@ -31,19 +31,9 @@ const CourseDescriptionPage = () => {
     <div>
       {/* <Appbar></Appbar> */}
       <Container>
-        <Grid container spacing={3} style={{ marginTop: "2%" , justifyContent:"center"}}>
+        <Grid container spacing={3} style={{ marginTop: "2%", justifyContent: "center" }}>
           <Grid item xs={12} sm={5}>
-            <Carousel thumbWidth={60} style={{ height: "80%" }}>
-              <div>
-                <img src={pic} alt="" srcset="" />
-              </div>
-              <div>
-                <img src={pic} alt="" srcset="" />
-              </div>
-              <div>
-                <img src={pic} alt="" srcset="" />
-              </div>
-            </Carousel>
+
             {/* <Carousel  infiniteLoop={true} thumbWidth={60} autoPlay style={{
               height: "100%", padding: "0"
             }}>
@@ -51,6 +41,22 @@ const CourseDescriptionPage = () => {
               <img src={pic} alt="" srcset="" />
               <img src={pic} alt="" srcset="" />
             </Carousel> */}
+            <Card style={{height:"100%"}}>
+              <CardContent>
+                <Carousel thumbWidth={60} infiniteLoop={true} autoPlay >
+                  <div>
+                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                  </div>
+                  <div>
+                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                  </div>
+                  <div>
+                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                  </div>
+                </Carousel>
+              </CardContent>
+
+            </Card>
           </Grid>
 
           <Grid item xs={12} sm={7}>
@@ -93,7 +99,7 @@ const CourseDescriptionPage = () => {
                 <Button variant="contained" color="primary" style={{ width: "100%", marginTop: "18px" }}>
                   Enroll Now
                 </Button>
-                <Typography style={{ width: "100%", marginTop: "18px" }} gutterBottom >
+                <Typography variant="body2" style={{ width: "100%", marginTop: "18px" }} gutterBottom >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ut maiores consequatur earum sunt totam et fugiat, cupiditate sed pariatur harum vitae? Alias ad hic officia sint fugit consequuntur repudiandae!
                 </Typography>
 
@@ -107,13 +113,13 @@ const CourseDescriptionPage = () => {
                     <ListItemIcon>
                       <ClassIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="Class 7" />
+                    <ListItemText variant="body2" primary="Class 7" />
                   </ListItem>
                   <ListItem button style={{ padding: "0" }}>
                     <ListItemIcon>
                       <AccessibilityIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="For 10-13 Years" />
+                    <ListItemText variant="body2" primary="For 10-13 Years" />
                   </ListItem>
                 </List>
                 <Divider />
@@ -122,14 +128,14 @@ const CourseDescriptionPage = () => {
                     <ListItemIcon>
                       <LibraryBooksIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="Total 15 Chapters" />
+                    <ListItemText variant="body2" primary="Total 15 Chapters" />
                   </ListItem>
 
                   <ListItem button style={{ padding: "0" }}>
                     <ListItemIcon>
                       <ScheduleIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="4 Month Course" />
+                    <ListItemText variant="body2" primary="4 Month Course" />
                   </ListItem>
                 </List>
 
