@@ -15,8 +15,8 @@
     margin-top:18px;
 }
 .rootCard{
-    width: 400px;
-    height:26.25rem;
+    width: "90%";
+    height:"80%";
     padding: 5px;
     background-image: linear-gradient(50deg, #C5D7BD, #FEFFDE,#C5D7BD);
 }

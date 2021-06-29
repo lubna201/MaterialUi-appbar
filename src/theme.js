@@ -81,7 +81,7 @@ export const theme = createMuiTheme({
       fontFamily: "Roboto",
       fontWeight: '800',
       // fontSize: "1.25rem",
-      fontSize: "18px",
+      fontSize: "1.125rem",
       lineHeight: '1.6',
       letterSpacing: "0.0075em",
       
