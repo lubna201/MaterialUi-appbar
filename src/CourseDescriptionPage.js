@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import pic from './pic.jpg';
 import Rating from '@material-ui/lab/Rating';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import ClassIcon from '@material-ui/icons/Class';
 import ScheduleIcon from '@material-ui/icons/Schedule';
