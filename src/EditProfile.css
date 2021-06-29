@@ -10,7 +10,61 @@
   text-align: 'center';
   /* background: '#364d79'; */
 }
-
+.textStyle{
+    width: "100%";
+    margin-top:18px;
+}
+.rootCard{
+    width: 400px;
+    height:26.25rem;
+    padding: 5px;
+    background-image: linear-gradient(50deg, #C5D7BD, #FEFFDE,#C5D7BD);
+}
+.burst span{
+    position:relative;
+    z-index:10;
+    height:60px;
+    display:block;
+    padding-top: 8px;
+    justify-content:center;
+    align-items: center;
+    /* font:12px/40px arial; */
+  }
+  .burst {
+      background: red;
+      border-color: black;
+      width: 62px;
+      height: 62px;
+      position: relative;
+      text-align: center;
+      color:white;
+        z-index:5;
+            margin:5px auto;
+  }
+  .burst:before, 
+  .burst:after {
+       content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 62px;
+      width: 62px;
+      background: red;
+      border-color: black;
+        z-index:2;
+  }
+  .burst:before {
+        -webkit-transform: rotate(30deg);
+         -moz-transform: rotate(30deg);
+          -ms-transform: rotate(30deg);
+           -o-transform: rotate(30deg);
+  }
+  .burst:after {
+        -webkit-transform: rotate(60deg);
+         -moz-transform: rotate(60deg);
+          -ms-transform: rotate(60deg);
+           -o-transform: rotate(60deg);
+  }
 
 
     

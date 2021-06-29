@@ -65,21 +65,23 @@ export const theme = createMuiTheme({
       fontSize: "2.125rem",
       lineHeight: '1.235',
       letterSpacing: "0.00735em",
-      [breakpoints.down('sm')]: {
-        fontSize: "1.5rem",
-      },
+      // [breakpoints.down('sm')]: {
+      //   fontSize: "1.5rem",
+      // },
     },
     h5: {
       fontFamily: "Roboto",
       fontWeight: '800',
-      fontSize: "1.5rem",
+      // fontSize: "1.5rem",
+      fontSize: "1.6rem",
       lineHeight: '1.334',
       letterSpacing: "0em",
     },
     h6: {
       fontFamily: "Roboto",
       fontWeight: '800',
-      fontSize: "1.25rem",
+      // fontSize: "1.25rem",
+      fontSize: "18px",
       lineHeight: '1.6',
       letterSpacing: "0.0075em",
       
@@ -101,7 +103,7 @@ export const theme = createMuiTheme({
     body1: {
       fontFamily: "Roboto", 
       fontWeight: '400',
-      fontSize: "1rem",
+      fontSize: "14px",
       lineHeight: '1.5',
       letterSpacing: "0.00938em",
     },
