@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { useState, useReducer } from 'react'
 import { BsUpload, FiEdit, AiOutlineEnter, AiFillDelete } from 'react-icons/all'
-import './style.css'
+// import './style.css'
 import axios from 'axios'
 import { getCookie } from './cookies'
 import TextField from '@material-ui/core/TextField';
@@ -12,6 +12,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 // import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import './EditProfile.css';
+
 
 const AddCourse = () => {
     function reducer(state, action) {
@@ -240,60 +245,62 @@ const AddCourse = () => {
             <React.Fragment>
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={5}>
-                        <form>
-                            <div className="first">
-                                <div className="form-group">
-                                    <TextField id="outlined-basic" label="Enter course name" variant="outlined" className="form-control" type="text" name="courseName" value={courseName} onChange={(e) => setCourseName(e.target.value)}></TextField>
-                                    {/* <input className="form-control" type="text" name="courseName" placeholder="Enter course name" value={courseName} onChange={(e) => setCourseName(e.target.value)}></input> */}
-                                </div>
-                                <div className="form-group">
-                                    <TextField id="outlined-basic" label="Enter short description" variant="outlined" className="form-control" type="text" name="shortDescription" value={courseShortDes} onChange={(e) => setCourseShortDes(e.target.value)}></TextField>
-                                </div>
-                                <div className="form-group">
-                                    <TextField
+                        <Card className="rootCard">
+                            <form>
+                                    <CardContent>
+                                        <div className="first">
+                                            <div className="form-group">
+                                                <TextField id="outlined-basic" label="Enter course name" variant="outlined" className="form-control" type="text" name="courseName" value={courseName} onChange={(e) => setCourseName(e.target.value)}></TextField>
+                                                {/* <input className="form-control" type="text" name="courseName" placeholder="Enter course name" value={courseName} onChange={(e) => setCourseName(e.target.value)}></input> */}
+                                            </div>
+                                            <div className="form-group">
+                                                <TextField id="outlined-basic" label="Enter short description" variant="outlined" className="form-control" type="text" name="shortDescription" value={courseShortDes} onChange={(e) => setCourseShortDes(e.target.value)}></TextField>
+                                            </div>
+                                            <div className="form-group">
+                                                <TextField
 
-                                        label="Enter long descripton"
-                                        multiline
-                                        rows={4}
-                                        defaultValue="Default Value"
-                                        variant="outlined"
-                                        className="form-control" type="textarea" id="longDescription" name="longDescription" value={courseDes} onChange={(e) => setCourseDes(e.target.value)}
-                                    />
+                                                    label="Enter long descripton"
+                                                    multiline
+                                                    rows={4}
+                                                    defaultValue="Default Value"
+                                                    variant="outlined"
+                                                    className="form-control" type="textarea" id="longDescription" name="longDescription" value={courseDes} onChange={(e) => setCourseDes(e.target.value)}
+                                                />
 
-                                    {/* <input className="form-control" type="textarea" id="longDescription" name="longDescription" placeholder="Enter long descripton" value={courseDes} onChange={(e) => setCourseDes(e.target.value)}></input> */}
-                                </div>
-                                <div className="form-group">
-                                    <TextField label="Enter the class" variant="outlined" className="form-control" type="text" id="standard" name="standard" value={standard} onChange={(e) => setStandard(e.target.value)}></TextField>
-                                </div>
-                                <div className="form-group" id="file-group">
-                                    <Button variant="contained" color="primary"> <label htmlFor="file"><BsUpload className="uploadIcon" />Upload Course Image</label></Button>
-                                    <input id="file" type="file" onChange={(e) => setImageD(e.target.files[0])} className="form-control" />
-                                </div>
-                            </div>
-                            <div className="second">
-                                <Grid container spacing={3}>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
-                                            <FormControl variant="outlined" className="form-control">
-                                                <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
-                                                <Select
-                                                    labelId="demo-simple-select-outlined-label"
-                                                    id="difficultyLevel" name="difficultyLevel" value={diffLevel}
-                                                    onChange={(e) => setDiffLevel(e.target.value)}
-                                                    label="Difficulty level"
-                                                >
-                                                    <MenuItem value="">
-                                                        <em>None</em>
-                                                    </MenuItem>
-                                                    <MenuItem value={10}>Beginner</MenuItem>
-                                                    <MenuItem value={20}>Intermediate</MenuItem>
-                                                    <MenuItem value={30}>Advanced</MenuItem>
-                                                    <MenuItem value={40}>Other</MenuItem>
-                                                </Select>
-                                            </FormControl>
+                                                {/* <input className="form-control" type="textarea" id="longDescription" name="longDescription" placeholder="Enter long descripton" value={courseDes} onChange={(e) => setCourseDes(e.target.value)}></input> */}
+                                            </div>
+                                            <div className="form-group">
+                                                <TextField label="Enter the class" variant="outlined" className="form-control" type="text" id="standard" name="standard" value={standard} onChange={(e) => setStandard(e.target.value)}></TextField>
+                                            </div>
+                                            <div className="form-group" id="file-group">
+                                                <Button variant="contained" color="primary"> <label htmlFor="file"><BsUpload className="uploadIcon" style={{width:"100%"}} />Upload Course Image</label><input id="file" style={{width:"100%"}} type="file" onChange={(e) => setImageD(e.target.files[0])} className="form-control" /></Button>
+
+                                            </div>
+                                        </div>
+                                        <div className="second">
+                                            <Grid container spacing={3}>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
+                                                        <FormControl variant="outlined" className="form-control">
+                                                            <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
+                                                            <Select
+                                                                labelId="demo-simple-select-outlined-label"
+                                                                id="difficultyLevel" name="difficultyLevel" value={diffLevel}
+                                                                onChange={(e) => setDiffLevel(e.target.value)}
+                                                                label="Difficulty level"
+                                                            >
+                                                                <MenuItem value="">
+                                                                    <em>None</em>
+                                                                </MenuItem>
+                                                                <MenuItem value={10}>Beginner</MenuItem>
+                                                                <MenuItem value={20}>Intermediate</MenuItem>
+                                                                <MenuItem value={30}>Advanced</MenuItem>
+                                                                <MenuItem value={40}>Other</MenuItem>
+                                                            </Select>
+                                                        </FormControl>
 
 
-                                            {/* <select className="form-control" type="select" id="difficultyLevel" name="difficultyLevel" value={diffLevel} onChange={(e) => setDiffLevel(e.target.value)}>
+                                                        {/* <select className="form-control" type="select" id="difficultyLevel" name="difficultyLevel" value={diffLevel} onChange={(e) => setDiffLevel(e.target.value)}>
 
                                                 <option className="dtitle">Difficulty level</option>
                                                 <option>Beginner</option>
@@ -302,39 +309,39 @@ const AddCourse = () => {
                                                 <option>Other</option>
                                             </select> */}
 
-                                        </div>
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
-                                            <TextField  label="Age Group" variant="outlined" className="form-control" type="text" id="ageGroup" name="ageGroup" value={age} onChange={(e) => setAge(e.target.value)}>
-                                            </TextField>
-                                        </div>
-                                    </Grid>
-                                </Grid>
-                                <Grid container spacing={3}>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" id="icon">
+                                                    </div>
+                                                </Grid>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
+                                                        <TextField label="Age Group" variant="outlined" className="form-control" type="text" id="ageGroup" name="ageGroup" value={age} onChange={(e) => setAge(e.target.value)}>
+                                                        </TextField>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid container spacing={3}>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" id="icon">
 
-                                        <FormControl variant="outlined" className="form-control">
-                                                <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
-                                                <Select
-                                                    labelId="demo-simple-select-outlined-label"
-                                                    id="board" name="board" value={board}
-                                                    onChange={(e) => setBoard(e.target.value)}
-                                                    label="Board"
-                                                >
-                                                    <MenuItem value="">
-                                                        <em>None</em>
-                                                    </MenuItem>
-                                                    <MenuItem value={10}>State</MenuItem>
-                                                    <MenuItem value={20}>CBSE</MenuItem>
-                                                    <MenuItem value={30}>ICSE</MenuItem>
-                                                    <MenuItem value={40}>Other</MenuItem>
-                                                </Select>
-                                            </FormControl>
+                                                        <FormControl variant="outlined" className="form-control">
+                                                            <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
+                                                            <Select
+                                                                labelId="demo-simple-select-outlined-label"
+                                                                id="board" name="board" value={board}
+                                                                onChange={(e) => setBoard(e.target.value)}
+                                                                label="Board"
+                                                            >
+                                                                <MenuItem value="">
+                                                                    <em>None</em>
+                                                                </MenuItem>
+                                                                <MenuItem value={10}>State</MenuItem>
+                                                                <MenuItem value={20}>CBSE</MenuItem>
+                                                                <MenuItem value={30}>ICSE</MenuItem>
+                                                                <MenuItem value={40}>Other</MenuItem>
+                                                            </Select>
+                                                        </FormControl>
 
 
-                                            {/* <select className="form-control" type="select" id="board" name="board" value={board} onChange={(e) => setBoard(e.target.value)}>
+                                                        {/* <select className="form-control" type="select" id="board" name="board" value={board} onChange={(e) => setBoard(e.target.value)}>
                                                 <option>Board</option>
                                                 <option>State</option>
                                                 <option>CBSE</option>
@@ -342,144 +349,158 @@ const AddCourse = () => {
                                                 <option>Other</option>
                                             </select> */}
 
+                                                    </div>
+
+                                                </Grid>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
+
+                                                        <TextField label="Mode of Instruction" variant="outlined" className="form-control" type="text" id="modeOfInstruction" name="modeOfInstruction" value={mode} onChange={(e) => setMode(e.target.value)}>
+                                                        </TextField>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
                                         </div>
+                                        <div className="third">
+                                            <Grid container spacing={3}>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group">
+                                                        <TextField label="Course Price" variant="outlined" id="coursePrice" className="form-control" type="number" name="coursePrice" value={coursePrice} onChange={onChange}>
+                                                        </TextField>
+                                                    </div>
+                                                </Grid>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
 
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
+                                                        <TextField label="Discount" variant="outlined" id="discount" className="form-control" type="number" name="discount" value={discount} onChange={onChange}>
+                                                        </TextField>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid container spacing={3}>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
 
-                                            <TextField label="Mode of Instruction" variant="outlined" className="form-control" type="text" id="modeOfInstruction" name="modeOfInstruction"  value={mode} onChange={(e) => setMode(e.target.value)}>
-                                            </TextField>
+                                                        <TextField label="Actual Price" variant="outlined" id="actualPrice" className="form-control" type="number" name="actualPrice" value={actualPrice} >
+                                                        </TextField>
+
+                                                    </div>
+
+
+                                                </Grid>
+                                                <Grid item xs={12} sm={6}>
+                                                    <div className="form-group" >
+
+                                                        <TextField label="Price After Discount" variant="outlined" id="priceAfterDiscount" className="form-control" type="number" name="priceAfterDiscount" value={priceAfterDiscount} >
+                                                        </TextField>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
                                         </div>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                            <div className="third">
-                                <Grid container spacing={3}>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group">
-                                        <TextField label="Course Price" variant="outlined" id="coursePrice" className="form-control" type="number" name="coursePrice" value={coursePrice} onChange={onChange}>
-                                            </TextField>
-                                        </div>
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
-
-                                        <TextField label="Discount" variant="outlined" id="discount" className="form-control" type="number" name="discount" value={discount} onChange={onChange}>
-                                            </TextField>
-                                        </div>
-                                    </Grid>
-                                </Grid>
-                                <Grid container spacing={3}>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
-
-                                        <TextField  label="Actual Price" variant="outlined" id="actualPrice" className="form-control" type="number" name="actualPrice" value={actualPrice} >
-                                            </TextField>
-
-                                        </div>
+                                    </CardContent>
+                               
+                                <CardActions>
+                                    <Button variant="contained" color="primary" type="submit" className="btn" onClick={courseSubmit}>Add Course</Button>
+                                    </CardActions>
+                            </form>
+                        </Card>
 
 
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <div className="form-group" >
-
-                                        <TextField label="Price After Discount" variant="outlined" id="priceAfterDiscount" className="form-control" type="number" name="priceAfterDiscount" value={priceAfterDiscount} >
-                                            </TextField>
-                                        </div>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                            <Button variant="contained" color="primary" type="submit" className="btn" onClick={courseSubmit}>Add Course</Button>
-                        </form>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <div className="fourth">
-                            <h1>Enter the Details of the Subject</h1>
-                            <div className="underLine1"></div>
-                            <form className="form1" >
-                                <div className="form-group">
-                                    <TextField id="outlined-basic" label="Subject" variant="outlined" type="text" name="text" className="form-control" value={subject} onChange={(e) => setSubject(e.target.value)}></TextField>
-                                </div>
-                                <div className="lesson">
-                                    <div className="form-group">
-                                        <TextField id="outlined-basic" label="Lesson" variant="outlined" type="text" name="lesson" className="form-control" value={lesson} onChange={(e) => setLesson(e.target.value)}></TextField>
-                                    </div>
-                                    <div className="form-controls">
-                                        <TextField id="outlined-basic" label="Chapter" variant="outlined" type="text" name="chapter" value={chapter} className="form-control" onChange={(e) => setChapter(e.target.value)}></TextField>
-                                        <TextField id="outlined-basic" label="Duration" variant="outlined" type="text" name="duration" value={duration} className="form-control" onChange={(e) => setDuration(e.target.value)}></TextField>
-                                        <AiOutlineEnter style={{ backgroundColor: "white", padding: "5px", borderRadius: "5px", fontSize: "35px", fontWeight: "bolder" }} onClick={editChapter ? EditChapter : insertChapter}>Add Chapter</AiOutlineEnter>
-                                    </div>
-                                    <div className="chapters" style={{ marginBottom: "30px" }}>
-                                        {
-                                            chapters.map((chap) => {
-                                                return (
-                                                    <div className="Span">
-                                                        <h4>{chap[0]}</h4>
-                                                        <h4>Duration:{chap[1]}</h4>
-                                                        <FiEdit onClick={() => editC(chap)}> </FiEdit>
-                                                        <AiFillDelete className="bs" onClick={() => removeChap(chap[0])}></AiFillDelete>
 
-                                                    </div>
-                                                )
-                                            })
-                                        }
 
-                                    </div>
-                                    <button type="submit" className="btn" onClick={edit ? editLesson : insertLesson}>Add Lesson</button><br></br>
-                                    <div className="lessons">
-                                        {
-                                            state.arr.map((les) => {
-                                                return (
-                                                    <div className="SpanLesson">
-                                                        <h4>{les.LessonName}</h4>
-                                                        <FiEdit onClick={() => editl(les.LessonName)}> </FiEdit>
-                                                        <AiFillDelete className="bs" onClick={() => { dispatch({ type: "remove_lesson", payLoad: les.LessonName }) }}></AiFillDelete>
-                                                    </div>
-                                                )
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                                <Button variant="contained" color="primary" className="btn" type="submit" onClick={editSubject ? EditSubject : handleSubmit}>Add Subject</Button>
-                            </form>
-                        </div>
-                        <div className="fifth">
-                            <h1>Details of the Course</h1>
-                            <div className="underLine1"></div>
-                            {
-                                state.subjects.map((sub) => {
-                                    return (
-                                        <div className="item" key={sub.id}>
-                                            <h1>{sub.Subject.subjectName}</h1>
-                                            <div>
+                        <Card className="rootCard">
+
+                            <CardContent>
+                                <div className="fourth">
+                                    <h1>Enter the Details of the Subject</h1>
+                                    <div className="underLine1"></div>
+                                    <form className="form1" >
+                                        <div className="form-group">
+                                            <TextField id="outlined-basic" label="Subject" variant="outlined" type="text" name="text" className="form-control" value={subject} onChange={(e) => setSubject(e.target.value)}></TextField>
+                                        </div>
+                                        <div className="lesson">
+                                            <div className="form-group">
+                                                <TextField id="outlined-basic" label="Lesson" variant="outlined" type="text" name="lesson" className="form-control" value={lesson} onChange={(e) => setLesson(e.target.value)}></TextField>
+                                            </div>
+                                            <div className="form-controls">
+                                                <TextField id="outlined-basic" label="Chapter" variant="outlined" type="text" name="chapter" value={chapter} className="form-control" onChange={(e) => setChapter(e.target.value)}></TextField>
+                                                <TextField id="outlined-basic" label="Duration" variant="outlined" type="text" name="duration" value={duration} className="form-control" onChange={(e) => setDuration(e.target.value)}></TextField>
+                                                <AiOutlineEnter style={{ backgroundColor: "white", padding: "5px", borderRadius: "5px", fontSize: "35px", fontWeight: "bolder" }} onClick={editChapter ? EditChapter : insertChapter}>Add Chapter</AiOutlineEnter>
+                                            </div>
+                                            <div className="chapters" style={{ marginBottom: "30px" }}>
                                                 {
-                                                    sub.Subject.Lessons.map((les) => {
-                                                        return (<div className="item-mini">
-                                                            <h3> {les.LessonName}</h3>
-                                                            <div className="sitem">
-                                                                {
-                                                                    les.chapters.map((chap) => {
-                                                                        return (
-                                                                            <React.Fragment>
-                                                                                <h4>{chap[0]}</h4>
-                                                                                <h4>{chap[1]}</h4>
-                                                                            </React.Fragment>
-                                                                        )
-                                                                    })
-                                                                }
+                                                    chapters.map((chap) => {
+                                                        return (
+                                                            <div className="Span">
+                                                                <h4>{chap[0]}</h4>
+                                                                <h4>Duration:{chap[1]}</h4>
+                                                                <FiEdit onClick={() => editC(chap)}> </FiEdit>
+                                                                <AiFillDelete className="bs" onClick={() => removeChap(chap[0])}></AiFillDelete>
+
                                                             </div>
-                                                        </div>)
+                                                        )
+                                                    })
+                                                }
+
+                                            </div>
+                                            <Button type="submit" className="btn" onClick={edit ? editLesson : insertLesson}>Add Lesson</Button><br></br>
+                                            <div className="lessons">
+                                                {
+                                                    state.arr.map((les) => {
+                                                        return (
+                                                            <div className="SpanLesson">
+                                                                <h4>{les.LessonName}</h4>
+                                                                <FiEdit onClick={() => editl(les.LessonName)}> </FiEdit>
+                                                                <AiFillDelete className="bs" onClick={() => { dispatch({ type: "remove_lesson", payLoad: les.LessonName }) }}></AiFillDelete>
+                                                            </div>
+                                                        )
                                                     })
                                                 }
                                             </div>
-                                            <Button variant="contained" color="primary" type="submit" onClick={() => { dispatch({ type: "remove_item", payLoad: sub.id }) }}>remove </Button>
-                                            <Button variant="contained" color="primary" type="submit" onClick={() => editS(sub.Subject.subjectName)} >Edit </Button>
+                                        </div>
+                                        <Button variant="contained" color="primary" className="btn" type="submit" onClick={editSubject ? EditSubject : handleSubmit}>Add Subject</Button>
+                                    </form>
+                                </div>
+                                <div className="fifth">
+                                    <h1>Details of the Course</h1>
+                                    <div className="underLine1"></div>
+                                    {
+                                        state.subjects.map((sub) => {
+                                            return (
+                                                <div className="item" key={sub.id}>
+                                                    <h1>{sub.Subject.subjectName}</h1>
+                                                    <div>
+                                                        {
+                                                            sub.Subject.Lessons.map((les) => {
+                                                                return (<div className="item-mini">
+                                                                    <h3> {les.LessonName}</h3>
+                                                                    <div className="sitem">
+                                                                        {
+                                                                            les.chapters.map((chap) => {
+                                                                                return (
+                                                                                    <React.Fragment>
+                                                                                        <h4>{chap[0]}</h4>
+                                                                                        <h4>{chap[1]}</h4>
+                                                                                    </React.Fragment>
+                                                                                )
+                                                                            })
+                                                                        }
+                                                                    </div>
+                                                                </div>)
+                                                            })
+                                                        }
+                                                    </div>
+                                                    <Button variant="contained" color="primary" type="submit" onClick={() => { dispatch({ type: "remove_item", payLoad: sub.id }) }}>remove </Button>
+                                                    <Button variant="contained" color="primary" type="submit" onClick={() => editS(sub.Subject.subjectName)} >Edit </Button>
 
-                                        </div>)
-                                })
-                            }
-                        </div>
+                                                </div>)
+                                        })
+                                    }
+                                </div>
+                            </CardContent>
+                        </Card>
                     </Grid>
                 </Grid>
             </React.Fragment>
