@@ -293,14 +293,14 @@ const AddCourse = () => {
                                             </FormControl>
 
 
-                                            {/* <select className="form-control" type="select" id="difficultyLevel" name="difficultyLevel" value={diffLevel} onChange={(e) => setDiffLevel(e.target.value)}>
+                                            <select className="form-control" type="select" id="difficultyLevel" name="difficultyLevel" value={diffLevel} onChange={(e) => setDiffLevel(e.target.value)}>
 
                                                 <option className="dtitle">Difficulty level</option>
                                                 <option>Beginner</option>
                                                 <option>Intermediate</option>
                                                 <option>Advanced</option>
                                                 <option>Other</option>
-                                            </select> */}
+                                            </select>
 
                                         </div>
                                     </Grid>
