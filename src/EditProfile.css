@@ -3,6 +3,9 @@
     height: 1000px;
     justify-content:center;
 }
+.form-group{
+    padding-top: 10px;
+}
 .contentStyle{
     height: '100%';
     color: '#fff';
@@ -14,6 +17,17 @@
     width: "100%";
     margin-top:18px;
 }
+::-webkit-file-upload-button {
+    background: #5abb75;
+    padding-left: 3em;
+    padding-right:3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+  }
 .rootCard{
     width: "90%";
     height:"80%";
