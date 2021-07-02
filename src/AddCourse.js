@@ -392,8 +392,8 @@ const AddCourse = () => {
                                             <TextField id="outlined-basic" label="Lesson" variant="outlined" type="text" name="lesson" className="form-control" style={{width:"100%"}} value={lesson} onChange={(e) => setLesson(e.target.value)}></TextField>
                                         </div>
                                         <div className="form-controls">
-                                            <TextField id="outlined-basic" label="Chapter" variant="outlined" style={{width:"100%"}} type="text" name="chapter" value={chapter} className="form-control" onChange={(e) => setChapter(e.target.value)}></TextField>
-                                            <TextField id="outlined-basic" label="Duration" style={{width:"100%"}} variant="outlined" type="text" name="duration" value={duration} className="form-control" onChange={(e) => setDuration(e.target.value)}></TextField>
+                                            <TextField id="outlined-basic" label="Chapter" variant="outlined" style={{width:"100%",marginTop:"10px"}} type="text" name="chapter" value={chapter} className="form-control" onChange={(e) => setChapter(e.target.value)}></TextField>
+                                            <TextField id="outlined-basic" label="Duration" style={{width:"100%",marginTop:"10px"}} variant="outlined" type="text" name="duration" value={duration} className="form-control" onChange={(e) => setDuration(e.target.value)}></TextField>
                                             <Button style={{marginTop:"10px"}}><AiOutlineEnter style={{ backgroundColor: "white", padding: "5px", borderRadius: "5px", fontSize: "35px", fontWeight: "bolder",width:"100%" }} onClick={editChapter ? EditChapter : insertChapter}>Add Chapter</AiOutlineEnter>
                                         </Button>
                                         </div>
@@ -431,7 +431,7 @@ const AddCourse = () => {
                                 </form>
                             </div>
                             <div className="fifth">
-                                <Typography variant="h4" component="h2" gutterBottom>Details of the Course</Typography>
+                                <Typography variant="h4" style={{marginTop:"10px"}} gutterBottom>Details of the Course</Typography>
                                 <div className="underLine1"></div>
                                 {
                                     state.subjects.map((sub) => {

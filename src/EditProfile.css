@@ -1,3 +1,25 @@
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #5abb75;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 20, 22);    /* color of the scroll thumb */
+    border-radius: 30px;       /* roundness of the scroll thumb */
+    border: 1px solid #5abb75;  /* creates padding around scroll thumb */
+  }
+
+
+
+
+
+
+
+
+
 .avatar {
     width: 1000px;
     height: 1000px;

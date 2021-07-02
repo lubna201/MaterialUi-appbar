@@ -12,6 +12,7 @@ import CourseDescriptionPage from './CourseDescriptionPage';
 // import AddCourse from './Addcourse';
 import EditProfile from './EditProfile';
 import Footer from './Footer';
+import IntroAnimation from './IntroAnimation';
 
 
 
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/courseDescription">
             <CourseDescriptionPage></CourseDescriptionPage>
+          </Route>
+          <Route path="/introAnimation">
+            <IntroAnimation></IntroAnimation>
           </Route>
           <Route path="/footer">
            <Footer></Footer>
