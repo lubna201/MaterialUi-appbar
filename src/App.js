@@ -13,6 +13,7 @@ import CourseDescriptionPage from './CourseDescriptionPage';
 import EditProfile from './EditProfile';
 import Footer from './Footer';
 import IntroAnimation from './IntroAnimation';
+import Contact from './Contact';
 
 
 
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/introAnimation">
             <IntroAnimation></IntroAnimation>
+          </Route>
+          <Route path="/contact">
+           <Contact></Contact>
           </Route>
           <Route path="/footer">
            <Footer></Footer>
