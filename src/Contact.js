@@ -16,11 +16,10 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import CallIcon from '@material-ui/icons/Call';
 import BusinessIcon from '@material-ui/icons/Business';
+// import Icon from 'material-ui/Icon';
+import Link from '@material-ui/core/Link';
 
 const Contact = () => {
-    function ListItemLink(props) {
-        return <ListItem button component="a" {...props} />;
-    }
     return (
         <Container>
             <Typography variant="h4" gutterBottom style={{ textAlign: "center", marginTop: "5%" }}>Contact Us</Typography>
@@ -43,36 +42,36 @@ const Contact = () => {
                     <Divider />
                     <List component="nav" aria-label="secondary mailbox folders">
                         <ListItem button>
-                            <ListItemLink href="//facebook.com">
+                        <Link href="#" variant="body2">
                                 <ListItemIcon>
                                     <FacebookIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Facebook" />
-                            </ListItemLink>
+                                </Link>
                         </ListItem>
                         <ListItem button>
-                            <ListItemLink href="//google.com">
+                        <Link href="#" variant="body2">
                                 <ListItemIcon>
                                     <WebIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Website" />
-                            </ListItemLink>
+                            </Link>
                         </ListItem>
                         <ListItem button>
-                            <ListItemLink href="//instagram.com">
+                        <Link href="#" variant="body2">
                                 <ListItemIcon>
                                     <InstagramIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Instagram" />
-                            </ListItemLink>
+                            </Link>
                         </ListItem>
                         <ListItem button>
-                            <ListItemLink href="//linkedin.com">
+                        <Link href="#" variant="body2">
                                 <ListItemIcon>
                                     <LinkedInIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="LinkedIn" />
-                            </ListItemLink>
+                            </Link>
                         </ListItem>
                     </List>
                 </Grid>
