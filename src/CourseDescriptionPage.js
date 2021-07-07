@@ -37,21 +37,21 @@ const CourseDescriptionPage = () => {
             {/* <Carousel  infiniteLoop={true} thumbWidth={60} autoPlay style={{
               height: "100%", padding: "0"
             }}>
-              <img src={pic} alt="" srcset="" />
-              <img src={pic} alt="" srcset="" />
-              <img src={pic} alt="" srcset="" />
+              <img src={pic} alt="" srcSet="" />
+              <img src={pic} alt="" srcSet="" />
+              <img src={pic} alt="" srcSet="" />
             </Carousel> */}
             <Card style={{height:"100%"}}>
               <CardContent>
                 <Carousel thumbWidth={60} infiniteLoop={true} autoPlay >
                   <div>
-                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                    <img src={pic} alt="" srcSet="" style={{width:"80%"}}/>
                   </div>
                   <div>
-                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                    <img src={pic} alt="" srcSet="" style={{width:"80%"}}/>
                   </div>
                   <div>
-                    <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                    <img src={pic} alt="" srcSet="" style={{width:"80%"}}/>
                   </div>
                 </Carousel>
               </CardContent>

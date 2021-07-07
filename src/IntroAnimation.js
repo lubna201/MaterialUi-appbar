@@ -14,7 +14,7 @@ const IntroAnimation = () => {
             {/* </div> */}
             <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                <img src={pic} alt="" srcset="" style={{width:"80%"}}/>
+                <img src={pic} alt="" srcSet="" style={{width:"80%"}}/>
                     <span style={{ fontSize: "3em",marginLeft:"10%" }}>Kids Galaxy</span>
                 </Animator>
             </ScrollPage>
