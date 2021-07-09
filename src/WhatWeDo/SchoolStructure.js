@@ -29,6 +29,7 @@ const SchoolStructure = () => {
                         The digital revolution has touched every sphere and facets of life including the education sector.
                         Revamp your school in a new up-to-date style
                     </Typography>
+                    <br/>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px" }}>Book Now</Button>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px", marginLeft: "15px" }}>Get in Touch</Button>
                 </Grid>
@@ -199,6 +200,7 @@ const SchoolStructure = () => {
                         the umbrella term for any learning that takes place across distance and not in a traditional
                         classroom.
                     </Typography>
+                    <br/>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px" }}>Get in Touch</Button>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px", marginLeft: "15px" }}>Book Now</Button>
                 </Grid>
