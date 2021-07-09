@@ -14,6 +14,7 @@ import EditProfile from './EditProfile';
 import Footer from './Footer';
 import IntroAnimation from './IntroAnimation';
 import ContactUs from './ContactUs';
+import SchoolStructure from './WhatWeDo/SchoolStructure';
 
 
 
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/footer">
            <Footer></Footer>
+          </Route>
+          <Route path="/schoolStructure">
+           <SchoolStructure/>
           </Route>
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
