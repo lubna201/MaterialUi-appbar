@@ -15,7 +15,7 @@ const SchoolStructure = () => {
     return (
         <Container>
             <Typography style={{ textAlign: "center", marginTop: "5%" }} variant="h4" gutterBottom>
-                School Structure
+                SCHOOL STRUCTURE
             </Typography>
             <Grid container spacing={3} style={{ marginTop: "4%" }}>
                 <Grid item xs={12} sm={6} >
@@ -29,7 +29,7 @@ const SchoolStructure = () => {
                         The digital revolution has touched every sphere and facets of life including the education sector.
                         Revamp your school in a new up-to-date style
                     </Typography>
-                    <br/>
+                    <br />
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px" }}>Book Now</Button>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px", marginLeft: "15px" }}>Get in Touch</Button>
                 </Grid>
@@ -41,151 +41,56 @@ const SchoolStructure = () => {
                 <Typography style={{ textAlign: "center", marginTop: "2%" }} variant="h4" gutterBottom>
                     Know More About It
                 </Typography>
-                <Accordion style={{ marginTop: "4%" }}>
+                <div className="floating" style={{ textAlign: "center", marginTop: "5%",marginBottom:"5%" }}>
+                    <div className="card-object rotate">
+                        <header></header>
+                        <aside></aside>
+                        <main><blockquote className="message">Kids Galaxy ensures that the school’s administration is goal oriented, constructive and practical. We manage aspects strategically and efficiently to ensure the best interests of the school.We ensure that schools remain full of motivation in teaching and are not constrained to an ineffective time limit. This results in arising growth of creative minds.A successful school is more than just education. The administration is what provides the school with effective day to day functioning. </blockquote></main>
+                        <footer class="author">Kids Galaxy</footer>
+
+                    </div>
+                </div>
+                <Accordion className="design">
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Organization of Schooling</Typography>
+                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>List of services under School Structure</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
                             <ul>
-                                <li>Developmental, ungraded wings</li>
-                                <li>Continuum classes</li>
-                                <li>Team teaching</li>
-                                <li>Collaboration within same grade level</li>
-                                <li>Integrated core courses</li>
+                                <li>Renovation of old school into new pattern.</li>
+                                <li>New School Set – Up.</li>
+                                <li>Teaching staff requirements.</li>
+                                <li>Website designing.</li>
                             </ul>
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
+                <Accordion className="design">
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Productive Uses of Time</Typography>
+                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>All types of educational training</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails >
                         <Typography>
                             <ul>
-                                <li>Block scheduling</li>
-                                <li>After-school tutoring</li>
-                                <li>Year-round schedule</li>
-                                <li>Summer school</li>
+                                <li>School management </li>
+                                <li>School directors</li>
+                                <li>Principals</li>
+                                <li>Counsellors</li>
+                                <li>Teachers </li>
+                                <li>Parents</li>
+                                <li>Student workshops for all subjects</li>
                             </ul>
                         </Typography>
                     </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}> Blended learning approach</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Blended learning is an approach to education that combines online educational materials and opportunities for interaction online with traditional place-based classroom methods. It requires the physical presence of both teacher and student, with some elements of student control over time, place, path, or pace.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Teacher Collaboration</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            <ul>
-                                <li>Cross-grade and within grade level planning</li>
-                                <li>Teacher collaboration within wings</li>
-                                <li>Weekly minimum days for joint planning</li>
-                                <li>Common planning time for teachers</li>
-                                <li>Team teaching</li>
-                            </ul>
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Professional Development</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            <ul>
-                                <li>Extensive professional development based on assessment of needs</li>
-                                <li>Professional development focusing on language development</li>
-                                <li>Intensive, long-term professional development through relationship with external partner</li>
-                            </ul>
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>School Decision- Making</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            <ul>
-                                <li>Committee- based decision- making</li>
-                                <li>Inquiry method implemented by cadres</li>
-                                <li>IHouse-level administration and decision-making</li>
-                            </ul>
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Parent, Community Engagement</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            <ul>
-                                <li>Extensive parent education, outreach, and involvement</li>
-                                <li>Parent and community outreach</li>
-                                <li>Parents involved in governance</li>
-                            </ul>
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion style={{ marginTop: "4%" }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography variant="p" color="primary" style={{ fontWeight: "700" }}>Integrated Services</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            <ul>
-                                <li>Proactive student counseling</li>
-                                <li>Referrals made by community liaisons</li>
-                                <li>On-site social services and referrals via social workers</li>
-                            </ul>
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                </Accordion>   
             </div>
             <Grid container spacing={3} style={{ marginTop: "5%", marginBottom: "5%" }}>
                 <Grid item xs={12} sm={6} >
@@ -193,14 +98,12 @@ const SchoolStructure = () => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <Typography variant="h5" gutterBottom style={{ marginTop: "4%", color: "#5abb75" }}>
-                        Online Learning!
+                    Your one stop solution!
                     </Typography>
                     <Typography variant="p" gutterBottom>
-                        Online learning is education that takes place over the Internet. It is often referred to as “elearning” among other terms. However, online learning is just one type of “distance learning” -
-                        the umbrella term for any learning that takes place across distance and not in a traditional
-                        classroom.
+                    An effective school organizational structure involves better work distribution, efficient management control, and good information processing. We are here with all the solution for your school.
                     </Typography>
-                    <br/>
+                    <br />
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px" }}>Get in Touch</Button>
                     <Button variant="contained" color="primary" type="submit" style={{ marginTop: "15px", marginLeft: "15px" }}>Book Now</Button>
                 </Grid>

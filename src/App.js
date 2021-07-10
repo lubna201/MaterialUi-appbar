@@ -15,13 +15,11 @@ import Footer from './Footer';
 import IntroAnimation from './IntroAnimation';
 import ContactUs from './ContactUs';
 import SchoolStructure from './WhatWeDo/SchoolStructure';
-
+import OperationManagement from './WhatWeDo/OperationManagement';
+import SchoolMarketing from './WhatWeDo/SchoolMarketing';
 
 
 function App() {
-
-
-
   return (
     <ThemeProvider theme={theme} >
       <Router>
@@ -47,6 +45,12 @@ function App() {
           </Route>
           <Route path="/schoolStructure">
            <SchoolStructure/>
+          </Route>
+          <Route path="/operationManagement">
+           <OperationManagement/>
+          </Route>
+          <Route path="/schoolMarketing">
+           <SchoolMarketing/>
           </Route>
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
