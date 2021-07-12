@@ -46,7 +46,7 @@ const OperationManagement = () => {
                         <header></header>
                         <aside></aside>
                         <main><blockquote className="message">Our well researched and experienced team allows us to do so in an easy way. Our managed schools involve calculated management which results in their optimized organizational results. We make management of the daily operations in a school hassle free by reducing the amount of work load and the pressure that comes with it. However, this is a very important aspect when it comes to schools. </blockquote></main>
-                        <footer class="author">Kids Galaxy</footer>
+                        <footer className="author">Kids Galaxy</footer>
 
                     </div>
                 </div>

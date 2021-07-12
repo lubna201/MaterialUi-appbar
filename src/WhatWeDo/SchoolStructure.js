@@ -46,7 +46,7 @@ const SchoolStructure = () => {
                         <header></header>
                         <aside></aside>
                         <main><blockquote className="message">Kids Galaxy ensures that the school’s administration is goal oriented, constructive and practical. We manage aspects strategically and efficiently to ensure the best interests of the school.We ensure that schools remain full of motivation in teaching and are not constrained to an ineffective time limit. This results in arising growth of creative minds.A successful school is more than just education. The administration is what provides the school with effective day to day functioning. </blockquote></main>
-                        <footer class="author">Kids Galaxy</footer>
+                        <footer className="author">Kids Galaxy</footer>
 
                     </div>
                 </div>

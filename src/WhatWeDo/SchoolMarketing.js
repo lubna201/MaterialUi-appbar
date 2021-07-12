@@ -46,7 +46,7 @@ const SchoolMarketing = () => {
                         <header></header>
                         <aside></aside>
                         <main><blockquote className="message">Marketing is a very diverse field. Kids Galaxy takes care of all your marketing needs. Our brilliant and experienced team makes your work easy and assured best results. We handle everything from putting forward a clear message, conducting thorough research, scaling the campaign by boosting, measuring campaign success, increasing the school’s visibility, developing long lasting relationships with the audience and so on.  </blockquote></main>
-                        <footer class="author">Kids Galaxy</footer>
+                        <footer className="author">Kids Galaxy</footer>
                     </div>
                 </div>
             </div>

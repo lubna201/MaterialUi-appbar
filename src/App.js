@@ -17,7 +17,8 @@ import ContactUs from './ContactUs';
 import SchoolStructure from './WhatWeDo/SchoolStructure';
 import OperationManagement from './WhatWeDo/OperationManagement';
 import SchoolMarketing from './WhatWeDo/SchoolMarketing';
-
+import HRManagement from './WhatWeDo/HRManagement';
+import EventIdeation from './WhatWeDo/EventIdeation';
 
 function App() {
   return (
@@ -51,6 +52,12 @@ function App() {
           </Route>
           <Route path="/schoolMarketing">
            <SchoolMarketing/>
+          </Route>
+          <Route path="/hrManagement">
+           <HRManagement/>
+          </Route>
+          <Route path="/eventIdeation">
+           <EventIdeation/>
           </Route>
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
