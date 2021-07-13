@@ -19,6 +19,8 @@ import OperationManagement from './WhatWeDo/OperationManagement';
 import SchoolMarketing from './WhatWeDo/SchoolMarketing';
 import HRManagement from './WhatWeDo/HRManagement';
 import EventIdeation from './WhatWeDo/EventIdeation';
+import AcademicCalendar from './WhatWeDo/AcademicCalendar';
+
 
 function App() {
   return (
@@ -58,6 +60,9 @@ function App() {
           </Route>
           <Route path="/eventIdeation">
            <EventIdeation/>
+          </Route>
+          <Route path="/academicCalendar">
+           <AcademicCalendar/>
           </Route>
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
