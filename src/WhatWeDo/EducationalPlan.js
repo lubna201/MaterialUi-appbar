@@ -26,7 +26,7 @@ const EducationalPlan = () => {
                     <Typography variant="h5" gutterBottom>
                         High School Education Plan
                     </Typography>
-                    <Typography variant="p" gutterBottom>
+                    <Typography variant="h6" gutterBottom>
                     Kids Galaxy, Your one stop solution. <br/>
                         Kids Galaxy helps in proper planning and establishing of plans for highest potential output.
                     </Typography>
