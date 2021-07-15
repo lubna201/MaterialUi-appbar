@@ -21,6 +21,8 @@ import HRManagement from './WhatWeDo/HRManagement';
 import EventIdeation from './WhatWeDo/EventIdeation';
 import AcademicCalendar from './WhatWeDo/AcademicCalendar';
 import EducationalPlan from './WhatWeDo/EducationalPlan';
+import PreSchoolPlan from './WhatWeDo/PreSchoolPlan';
+
 
 
 function App() {
@@ -68,6 +70,10 @@ function App() {
           <Route path="/educationalPlan">
            <EducationalPlan/>
           </Route>
+          <Route path="/preSchoolPlan">
+          <PreSchoolPlan/>
+          </Route>
+          
           {/* <Route path="/AddCourse">
            <AddCourse></AddCourse>
           </Route> */}
